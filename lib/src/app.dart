@@ -13,7 +13,7 @@ class App extends StatelessWidget {
       title: 'Log Me In',
       home: Scaffold(
         appBar:AppBar(title: Text('Login Screen')),
-        body:EmployeeScreen(), ),
+        body:loginScreen(), ),
     );
   }
 

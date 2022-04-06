@@ -1,6 +1,9 @@
 import 'dart:async';
+import 'validators/validators.dart';
 
-class Bloc{
+
+//?for using mixins extends to Object class
+class Bloc extends Object with Validators{
   final _email = StreamController<String>();
   final _password = StreamController<String>();
 
@@ -15,3 +18,5 @@ class Bloc{
   Function(String) get changePassword=>_password.sink.add;
 
 }
+
+final bloc = Bloc();
