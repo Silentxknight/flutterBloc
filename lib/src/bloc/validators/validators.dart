@@ -11,7 +11,7 @@ class Validators{
   );
   final validatePass=StreamTransformer<String,String>.fromHandlers(
     handleData: (password, sink){
-      if(password > 3){
+      if(password.length > 3){
         sink.add(password);
       }else{
         sink.addError('Enter A Valid PAssword');
